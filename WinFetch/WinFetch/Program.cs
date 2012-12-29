@@ -16,7 +16,7 @@ namespace WinFetch
             //méthode pour dessiner l'ASCII ART de l'OS (en couleur!)
             DrawOs();
 
-            //je déplace le curseur pour écrire les propriétés utilisateur et OS (pour l'instant!)
+            //je déplace le curseur pour écrire les propriétés utilisateur et OS (pour l'instant!) et etc....
             Console.SetCursorPosition(infoLeft, 2);
             WriteUser();
             Console.SetCursorPosition(infoLeft, 3);
@@ -38,7 +38,7 @@ namespace WinFetch
             Console.Write(a.Days + "d " + a.Hours + "h " + a.Minutes + "m");
         }
 
-
+        //petit truc que j'ai trouvé sur internet en cherchant un peu (pour trouver l'uptime du systeme)...
         public static TimeSpan UpTime
         {
             get
@@ -65,7 +65,7 @@ namespace WinFetch
 
         private static void WriteUser()
         {
-            //jme poigne les infos utilisateur via windowsidentity sous la forme MACHINE_NAME\USER_NAME
+            //jme poigne les infos utilisateur via windowsidentity sous la forme "MACHINE_NAME\USER_NAME"
             string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
 
             //je trouve la place ou est le "\" dans le string

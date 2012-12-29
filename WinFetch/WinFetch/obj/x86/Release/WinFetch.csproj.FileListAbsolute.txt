@@ -2,3 +2,4 @@ C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\bin\Release\
 C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\bin\Release\WinFetch.pdb
 C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\obj\x86\Release\WinFetch.exe
 C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\obj\x86\Release\WinFetch.pdb
+C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\obj\x86\Release\WinFetch.csprojResolveAssemblyReference.cache
