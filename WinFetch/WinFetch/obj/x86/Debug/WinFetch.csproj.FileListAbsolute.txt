@@ -3,3 +3,4 @@ C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\bin\Debug\Wi
 C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\obj\x86\Debug\WinFetch.csprojResolveAssemblyReference.cache
 C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\obj\x86\Debug\WinFetch.exe
 C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\obj\x86\Debug\WinFetch.pdb
+C:\Users\Paul\Documents\WinFetch Project\WinFetch\WinFetch\WinFetch\bin\Debug\OSVersionInfo.dll
