@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 
 namespace WinFetch
 {
@@ -20,11 +21,37 @@ namespace WinFetch
             WriteUser();
             Console.SetCursorPosition(infoLeft, 3);
             WriteOS();
+            Console.SetCursorPosition(infoLeft, 4);
+            WriteUptime();
 
             //retour à la case départ
             Console.SetCursorPosition(0, 22);
             Console.ReadKey(true);
         }
+
+        private static void WriteUptime()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("UpTime: ");
+            Console.ResetColor();
+            TimeSpan a = UpTime;
+            Console.Write(a.Days + "d " + a.Hours + "h " + a.Minutes + "m");
+        }
+
+
+        public static TimeSpan UpTime
+        {
+            get
+            {
+                using (var uptime = new PerformanceCounter("System", "System Up Time"))
+                {
+                    uptime.NextValue();
+                    return TimeSpan.FromSeconds(uptime.NextValue());
+                }
+            }
+        }
+
+
 
         private static void WriteOS()
         {
